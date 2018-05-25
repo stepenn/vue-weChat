@@ -1,0 +1,39 @@
+.convention{
+  h2{
+    font-size: 0.35rem;
+    font-weight: normal;
+    padding: 1rem 0.6rem 0.5rem;
+    color: $fc;
+  }
+  .convention-set{
+    display: flex;
+    justify-content: space-between;
+    padding:0 0.6rem;
+    margin-top:0.5rem;
+    .reduce{
+      border:1px solid #d2d2d2;
+      padding:0 0.3rem;
+    }
+    .default{
+      font-size: .35rem;
+      padding:.5rem 1.5rem;
+      border:1px solid #d2d2d2;
+      display: inline-block;
+      width: 3.5rem;
+      text-align: center;
+    }
+    .add{
+      @extend .reduce;
+    }
+  }
+  .confirm{
+    padding: .25rem .5rem;
+    text-align: center;
+    font-size: .35rem;
+    color:#fff;
+    width: 85%;
+    background: $bg;
+    margin: 1rem auto 0;
+    border-radius: 0.15rem;
+  }
+}

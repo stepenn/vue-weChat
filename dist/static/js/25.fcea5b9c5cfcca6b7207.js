@@ -1,0 +1,2 @@
+webpackJsonp([25],{L72v:function(e,t){},NTab:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement;return(this._self._c||e)("router-view")},staticRenderFns:[]};var u=n("Z0/y")({name:"ForgetPwd"},r,!1,function(e){n("L72v")},null,null);t.default=u.exports}});
+//# sourceMappingURL=25.fcea5b9c5cfcca6b7207.js.map

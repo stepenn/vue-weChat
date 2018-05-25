@@ -1,0 +1,233 @@
+#content{
+  background:#F3F4F8;
+  position: relative;
+  font-size:0.35rem;
+  color:#5D5D5D;
+  .titleH2{
+    background: #fff;
+    padding-top:0.5rem;
+    .timeSet{
+      padding:0 0.5rem 0.5rem;
+      border-bottom:1px solid #eee;
+      .currentTime{
+        float:left;
+        font-size: 0.42rem;
+        color:$fc;
+      }
+      .listShow{
+        float:right;
+        color:#00BD93;
+        font-size: 0.35rem;
+        padding:0.08rem;
+      }
+    }
+    .calendar{
+      padding-bottom: 0.25rem;
+      position:relative;
+      .week{
+        display: flex;
+        justify-content: space-between;
+        padding:0.4rem 0.8rem 0;
+        .item{
+          width:12%;
+          text-align: center;
+          font-size: .32rem;
+        }
+      }
+      .prev{
+        position:absolute;
+        width:0.6rem;
+        height:0.6rem;
+        top:46%;
+      }
+      .next{
+        @extend .prev;
+        right:0;
+      }
+      .calendarBox{
+        overflow: hidden;
+        padding:0 0.8rem .1rem;
+        font-size: 0.4rem;
+        .timeBox{
+          @extend .week;
+          padding:0 0.8rem;
+        }
+      }
+
+    }
+  }
+}
+.appointList{
+  padding:0.2rem 0.5rem;
+  background: #fff;
+  margin-top:0.2rem;
+  font-size:0.3rem;
+  .listBox{
+    .flex{
+      border-top:1px solid #eee;
+      margin-top:0.1rem;
+      background: #fff;
+      padding-top:0.2rem;
+      display:flex;
+      justify-content: space-between;
+      &:nth-child(1){
+        border-top:none;
+      }
+      .left{
+        .leftCon{
+          padding:0.2rem;
+          .appointStatusA{
+            background: #01BC95;
+            color:#fff;
+            padding:0.05rem;
+            margin:0 0.1rem;
+            font-size: 0.3rem;
+          }
+          .isCheat{
+            @extend .appointStatusA;
+            background: #ebfbf5;
+            color: #5ed0b6;
+          }
+          .appointStatusB{
+            @extend .appointStatusA;
+            background: #FCB420;
+          }
+          .appointStatusC{
+            @extend .appointStatusA;
+            background: #F97A5D;
+          }
+          .appointStatusD{
+            @extend .appointStatusA;
+            background: #C0C1C5;
+          }
+          .appointStatusE{
+            @extend .appointStatusA;
+            background: #FFE8E4;
+            color:#DCA48E;
+          }
+        }
+        .number{
+          @extend .leftCon;
+        }
+      }
+      .details{
+        margin-top: 0.4rem;
+        width: .5rem;
+        height: .5rem;
+      }
+    }
+  }
+
+}
+.startDay{
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #00bd93;
+  color: #fff;
+  font-size: 0.3rem;
+  text-align: center;
+  line-height: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}
+.monitor{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.32rem;
+  overflow: hidden;
+  width:100%;
+  span{
+    padding:0.1rem 0 0.42rem;
+    margin-top: .35rem;
+    width:12%;
+    text-align: center;
+  }
+}
+.clickStatus{
+  background: $bg;
+  color:#fff!important;
+  padding:0 0.1rem 0.4rem 0.15rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0.05rem;
+  &:after{
+    @extend .cur:after;
+    background: #fff!important;
+    left:.32rem!important;
+  }
+}
+.appBg{
+  background:#F3F4F8!important;
+}
+.cur{
+  position:relative;
+  color:$fc;
+  &:after{
+    content:'';
+    display:block;
+    width:0.1rem;
+    height:0.1rem;
+    position:absolute;
+    top:.6rem;
+    left:.32rem;
+    background: $bg;
+    border-radius: 50%;
+  }
+}
+.today{
+  position:relative;
+  color:$bg;
+  &:before{
+    content:'今';
+    display:block;
+    color:#fff;
+    width:.35rem;
+    height:.35rem;
+    position:absolute;
+    top:.5rem;
+    left:0.18rem;
+    background: $bg;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: .28rem;
+  }
+}
+.gray{
+  color:#d6d6d6;
+}
+.sur{
+  color:#1c1c1c;
+}
+.infinite-scroll{
+  height: 0.8rem;
+  border-top: 2px dotted #dedede;
+  font-size: 0.3rem;
+  color: #787878;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.clickStatus1{
+  background: $bg;
+  color:#fff!important;
+  padding:0 0.15rem 0.4rem 0.15rem;
+  width:.7rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0.05rem;
+  &:before{
+    @extend .today:before;
+    left:0.18rem;
+    top:0.45rem;
+  }
+}
+.activeSpan{
+  @extend .clickStatus;
+}
+
+
+
+

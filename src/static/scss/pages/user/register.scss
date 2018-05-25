@@ -1,0 +1,98 @@
+.register-container {
+  width: 6.2rem;
+  height: 100%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 0.3rem;
+  padding-top: 0.74rem;
+  h2 {
+    font-size: 0.46rem;
+    color: #1c1c1c;
+  }
+  h3{
+    font-size: 0.32rem;
+    font-weight: normal;
+    color:$fc;
+    padding-bottom: .15rem;
+    line-height: 0.5rem;
+    //text-overflow: ellipsis;
+    //white-space:nowrap ;
+    //overflow: hidden;
+    .hos-port{
+      color:$bg;
+    }
+  }
+  p {
+    color: #787878;
+    margin-top: 0.6rem;
+  }
+  a {
+    color: $bg;
+    font-size: 0.3rem;
+  }
+  .input-box {
+    margin-top: 0.34rem;
+    padding: 0.32rem 0;
+    border-bottom: 0.01rem solid #e7eaf1;
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+    input {
+      flex: 1;
+      font-size: 0.3rem;
+    }
+    span {
+      display: block;
+      // width: 2rem;
+      text-align: right;
+      color: #787878;
+      &.reget {
+        color: $bg;
+      }
+    }
+    .see-icon {
+      width: 0.35rem;
+      height: 0.22rem;
+      background-image: url(../../../static/images/pwd-show.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-self: center;
+      &.hidden {
+        background-image: url(../../../static/images/pwd-hidden.png);
+        align-self: flex-end;
+      }
+    }
+  }
+  .toLogin {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: block;
+      color:$bg;
+    }
+    span {
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+  }
+}
+
+.next-button {
+  margin-top: 1rem;
+  width: 100%;
+  height: 0.9rem;
+  text-align: center;
+  font-size: 0.3rem;
+  line-height: 0.9rem;
+  border-radius: 0.1rem;
+  color: #fff;
+  background-color: $bg;
+}
+
+.next-button[disabled=disabled] {
+  background-color: #A9E3D5;
+}

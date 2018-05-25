@@ -1,0 +1,2 @@
+webpackJsonp([15],{VdcB:function(e,t){},iDJx:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement;return(this._self._c||e)("router-view")},staticRenderFns:[]};var a=n("Z0/y")({name:"list"},r,!1,function(e){n("VdcB")},"data-v-755e29ae",null);t.default=a.exports}});
+//# sourceMappingURL=15.a8225a7567e957f3588b.js.map

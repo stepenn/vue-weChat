@@ -1,0 +1,42 @@
+html,body{
+  width:100%;
+  height:100%;
+}
+body{
+  position: relative;
+}
+.titleH2{
+  background: #fff;
+  padding-top:0.75rem;
+}
+.clearfix:after{
+  content:'';
+  display: block;
+  width:100%;
+  height:0;
+  clear: both;
+}
+.container{
+  margin:0 auto;
+  max-width: 640px;
+  height:100%;
+}
+img{
+  width: 100%;
+  height: 100%;
+  border-style: none;
+}
+.noneAppoint{
+  position: absolute;
+  margin:auto;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width: 2.3rem;
+  height: 0.5rem;
+  font-size:0.32rem;
+  color:$fa;
+}
+
+

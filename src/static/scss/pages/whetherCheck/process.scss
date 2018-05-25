@@ -1,0 +1,14 @@
+.checkBox{
+  .loading{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    margin: 2.5rem auto 0.5rem;
+    pointer-events: none;
+  }
+  .checkText{
+    font-size: .32rem;
+    color:#1c1c1c;
+    text-align: center;
+  }
+}

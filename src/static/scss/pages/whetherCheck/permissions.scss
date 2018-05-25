@@ -1,0 +1,13 @@
+@import "./process";
+
+.noHave{
+  @extend .loading;
+  pointer-events: none;
+  margin-bottom: 0!important;
+}
+.checkSorry{
+  @extend .checkText;
+  font-size: .4rem!important;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,54 @@
+.userWrapper{
+  padding:1rem 0.5rem;
+}
+.userMessage{
+  font-size: .4rem;
+  font-weight: normal;
+}
+.userBox{
+  padding: .3rem .4rem;
+  color: #1c1c1c;
+  border: 1px solid #d9dce4;
+  margin-top: 0.6rem;
+  .card{
+    font-size: .32rem;
+    display: flex;
+    .mark{
+      color:#787878;
+      align-self:flex-start;
+      span{
+        display: block;
+        line-height: 0.6rem;
+      }
+    }
+    .result{
+      color:#1c1c1c;
+      align-self:center;
+      span{
+        display: block;
+        line-height: 0.6rem;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        overflow: hidden;
+        width:4rem;
+      }
+    }
+  }
+}
+.confirm{
+  margin-top: 0.6rem;
+  .confirm-button {
+    width: 100%;
+    height: 0.9rem;
+    text-align: center;
+    font-size: 0.3rem;
+    line-height: 0.9rem;
+    border-radius: 0.1rem;
+    color: #fff;
+    background-color: #00BD93;
+  }
+}
+.confirm-button[disabled=disabled] {
+  background-color: #A9E3D5;
+}
+

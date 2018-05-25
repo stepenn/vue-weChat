@@ -1,0 +1,39 @@
+@import "./list";
+.Search{
+  .search-box{
+    padding: .5rem .35rem .3rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .search-input{
+      background: #F1F2F6;
+      flex: 1;
+      color: #484848;
+      font-size: 0.3rem;
+      text-indent: 0.8rem;
+      padding: 0.2rem 0;
+    }
+    .search-icon{
+      display: block;
+      width: 0.35rem;
+      height: 0.35rem;
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.6rem;
+    }
+    .search-icon-two{
+      display: block;
+      width: 0.7rem;
+      height: 0.7rem;
+      position: absolute;
+      right: 1.3rem;
+      top: 0.55rem;
+    }
+    .search-word{
+      font-size: .35rem;
+      display: block;
+      margin:.2rem 0 0 .2rem;
+      color:#22C495;
+    }
+  }
+}
